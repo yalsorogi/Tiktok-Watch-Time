@@ -1,12 +1,7 @@
-#Remember to import random for Pt3
-
-# You are running an online Tiktok Account.
-# You want to populate your account with videos (Pt1)
-# You want to set the times to your videos (Pt2)
-# You want to know your total watch time (Pt3)
+#Watch Time Calculator
 
 import random
-# Part 1 - Part 1 - What are the titles of the videos on your Tiktok account?
+#populate your account with videos 
 print("Part 1 - What are the titles of the videos in on your Tiktok account? ")
 videos = []
 video_name = input("Come up with some video titles ('exit' to stop):")
@@ -16,10 +11,7 @@ while video_name != "exit":
     video_name = input("Come up with some video titles ('exit' to stop):")
 print(videos)
 
-# Part 2 - How long is each video on your account?
-#Loop through all the videos
-#Ask user for time (in mins) for video. Tell them the name of video
-#Add video name as key and time as value in your dictionary
+#set the times to your videos
 print("Part 2 - How long is each video on your account?")
 video_times = {}
 for i in videos:
@@ -27,10 +19,7 @@ for i in videos:
     video_times[i] = time
 print(video_times)
 
-# Part 3 - What is your total watch time?
-#Ask the user how many subscribers they have
-#Each subscriber randomly watches 2 videos (don't use loop for this, can use random function 2 times)
-#Subscriber can choose to watch the same video again
+#total watch time
 print("Part 3 - Let's talk about watch time.")
 sub_count = int(input("How many subscribers do I have?"))
 total_watch_time = 0
